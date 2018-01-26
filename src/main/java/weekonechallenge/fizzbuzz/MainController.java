@@ -12,7 +12,7 @@ public class MainController {
 
     public String printNumbers(){
 
-//The first challenge...
+//The first challenge (the basic one)...
 
         String result="";
 /*
@@ -41,15 +41,15 @@ public class MainController {
         for(int i=1;i<=endingNumber;i++ ){
 
             if(i%3==0&&i%5==0)
-                result+="FizzBuzz"+"\n";
+                result+="FizzBuzz"+"\n"+"<br/>";
 
             else if (i%3==0)
-                result+="Fizz"+"\n";
+                result+="Fizz"+"\n"+"<br/>";
 
             else if(i%5==0)
-                result+="Buzz"+"\n";
+                result+="Buzz"+"\n"+"<br/>";
             else
-                result+=Integer.toString(i)+"\n";
+                result+=Integer.toString(i)+"\n"+"<br/>";
 
             if(i%7==0)
                 count7++;
@@ -61,7 +61,7 @@ public class MainController {
         }
 
         System.out.println(result);
-        result+="Number of multiples of 7:"+count7+"\n"+"Number of multiples of 17:"+count17+"\n"+"Number of multiples of 23:"+count23+"\n";
+        result+="Number of multiples of 7:"+count7+"\n"+"<br/>"+"Number of multiples of 17:"+count17+"\n"+"<br/>"+"Number of multiples of 23:"+count23+"\n"+"<br/>";
         return result;
     }
 }
